@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketchy</title>
+     <link rel="stylesheet" href="m.css">
+</head>
+<body>
+    <canvas id="blackboard" width="1920" height="1080"></canvas>
+    <div class="controls">
+        <label for="color">Chalk-Color:</label>
+        <input type="color" id="customColor" value="#ffffff">
+        <input type="number" id="strokeWidth" min="1" max="20" value="2">
+        <button class="term1" onclick="clearBoard()">Clear Board</button>
+        <button class= "term1" onclick="saveBoard()">Save as Image</button>
+
+    </div>
+    
+   <script src="bufferb/drawBuffer.js">       
+   </script>
+</body>
+</html>
